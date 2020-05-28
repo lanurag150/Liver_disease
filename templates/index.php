@@ -4,15 +4,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Premedic-Liver Disease Analysis</title>
+    <title>Premedic-Liver Diseases Analysis</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-          <link rel="stylesheet" href="{{ url_for('static', filename='css/open-iconic-bootstrap.min.css') }}" >
-    <link rel="stylesheet"  href="{{ url_for('static', filename='css/animate.css') }}>
+       <link rel="stylesheet" href="{{ url_for('static', filename='css/open-iconic-bootstrap.min.css') }}" >
+    <link rel="stylesheet"  href="{{ url_for('static', filename='css/animate.css') }}">
+    
     <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" >
     <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}" >
     <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}" >
@@ -25,11 +26,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.timepicker.css') }}">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" >
-    <link rel="stylesheet"href="{{ url_for('static', filename='css/flaticon.css') }}" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css') }}" >
     <link rel="stylesheet" href="{{ url_for('static', filename='css/icomoon.css') }}">
   </head>
   <body>
-    
+  
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
       <a class="navbar-brand" href="http://premediccare.rf.gd/mainindex-user.php"><i class="flaticon-pharmacy"></i><span>Pre</span>Medic Care</a>
@@ -48,7 +49,7 @@
         </ul>
         <div class="dropdown" style="float:right;">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<?php $_SESSION['Name'];?>
+<?php $_COOKIE['Name'];?>
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="#">Dashboard</a>
@@ -60,20 +61,19 @@
   </nav>
     <!-- END nav -->
     
-   
- <div class="hero-wrap" style="background-image: url('{{ url_for('static', filename='images/liver.jpg') }}'); background-attachment:fixed;">
-  <div class="overlay"></div>
+    <div class="hero-wrap" style="background-image: url('{{ url_for('static', filename='images/liver.png') }}'); background-attachment:fixed;">
+      <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
           <div class="col-md-8 ftco-animate text-center">
-            <p class="breadcrumbs"><span class="mr-2"><a href="http://premediccare.rf.gd/indexmain-user.php">Home</a></span></p>
-            <h3 class="mb-3 bread">Diabetes Disease-Department</h3>
+            <p class="breadcrumbs"><span class="mr-2"><a href="http://premediccare.rf.gd/index.php">Home</a></span></p>
+            <h3 class="mb-3 bread">Liver-Department</h3>
           </div>
         </div>
       </div>
-    </div>																	   
-      
- <section class="ftco-section contact-section ftco-degree-bg" style="height: 800px">
+    </div>
+
+   <section class="ftco-section contact-section ftco-degree-bg" style="height: 1800px">
    
       <div class="container col-lg-6" >
           
@@ -119,6 +119,7 @@
 		<p>      
                 <label class="w3-text-black"><b>Albumin and Globulin Ratio</b></label>
                 <input class="w3-input w3-border w3-sand" name="globin" type="text" required="required"></p>
+            
                 <p>
                 <button type="submit"class="w3-btn w3-black">Analyse now</button></p>
               </form>
@@ -126,7 +127,7 @@
             </div>
       {{ prediction_text }}
     </section>
-		
+		<footer class="ftco-footer ftco-bg-dark ftco-section img" style="background-image: url(images/bg_5.jpg);">
     	<div class="overlay"></div>
       <div class="container">
         <div class="row mb-5">
@@ -160,8 +161,8 @@
             	<div class="block-23 mb-3">
 	              <ul>
 	                <li><span class="icon icon-map-marker"></span><span class="text">King's Palace 9(a), Kiit University, Patia, Bhubaneshwar,Odisha-751024</span></li>
-	                <li><a href="tel:+91 9798428466"><span class="icon icon-phone"></span><span class="text">+91 9798428466</span></a></li>
-	                <li><a href="mailto:ankitaditya02@gmail.com"><span class="icon icon-envelope"></span><span class="text">ankitaditya02@gmail.com</span></a></li>
+	                <li><a href="tel:+91 7735866609"><span class="icon icon-phone"></span><span class="text">+91 7735866609</span></a></li>
+	                <li><a href="mailto:piyushsinghpk21@yahoo.com"><span class="icon icon-envelope"></span><span class="text">piyushsinghpk21@yahoo.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
@@ -176,15 +177,12 @@
           </div>
         </div>
       </div>
-   
+    </footer>
     
   
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-
     <!-- Main JS-->
    
 
