@@ -73,7 +73,7 @@
       </div>
     </div>
 
-   <section class="ftco-section contact-section ftco-degree-bg" style="height: 1200px">
+   <section class="ftco-section contact-section ftco-degree-bg" style="height: 1200px" style="background-image: url('{{ url_for('static', filename='images/back.png') }}'); background-attachment:fixed;">
    
       <div class="container col-lg-6" >
           
