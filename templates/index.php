@@ -62,7 +62,18 @@
     
    
  <div class="hero-wrap" style="background-image: url('{{ url_for('static', filename='images/liver.jpg') }}'); background-attachment:fixed;">
-   <section class="ftco-section contact-section ftco-degree-bg" style="height: 1500px">
+  <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-8 ftco-animate text-center">
+            <p class="breadcrumbs"><span class="mr-2"><a href="http://premediccare.rf.gd/indexmain-user.php">Home</a></span></p>
+            <h3 class="mb-3 bread">Diabetes Disease-Department</h3>
+          </div>
+        </div>
+      </div>
+    </div>																	   
+      
+ <section class="ftco-section contact-section ftco-degree-bg" style="height: 800px">
    
       <div class="container col-lg-6" >
           
