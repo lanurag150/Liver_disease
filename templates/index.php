@@ -61,7 +61,7 @@
     <!-- END nav -->
     
    
-
+ <div class="hero-wrap" style="background-image: url('{{ url_for('static', filename='images/liver.jpg') }}'); background-attachment:fixed;">
    <section class="ftco-section contact-section ftco-degree-bg" style="height: 1500px">
    
       <div class="container col-lg-6" >
